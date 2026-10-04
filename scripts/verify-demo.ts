@@ -1,0 +1,15 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {Connection,PublicKey} from '@solana/web3.js';
+import {decode} from '../src/chain.js';
+const config=JSON.parse(readFileSync('public-demo.json','utf8'));
+const signature=process.argv[2];if(!signature)throw Error('Usage: tsx scripts/verify-demo.ts <confirmed payout signature>');
+const c=new Connection(config.rpc,'confirmed');const tx=await c.getTransaction(signature,{commitment:'confirmed',maxSupportedTransactionVersion:0});
+if(!tx?.meta||tx.meta.err)throw Error('No successful confirmed transaction');
+const keys=tx.transaction.message.getAccountKeys().staticAccountKeys.map(k=>k.toBase58());
+const hotel=keys.indexOf(config.hotel);const escrow=keys.indexOf(config.escrow);if(hotel<0||escrow<0)throw Error('Unexpected accounts');
+if(tx.meta.postBalances[hotel]-tx.meta.preBalances[hotel]!==30_000_000-tx.meta.fee)throw Error('Hotel payout mismatch');
+if(tx.meta.preBalances[escrow]-tx.meta.postBalances[escrow]!==30_000_000)throw Error('Escrow debit mismatch');
+const a=await c.getAccountInfo(new PublicKey(config.escrow));if(!a?.owner.equals(new PublicKey(config.programId)))throw Error('Owner mismatch');const state=decode(a.data);if(!state.paid||state.refunds!==0)throw Error('Booking status mismatch');
+const report={network:config.rpc.includes('devnet')?'Devnet':'Localnet',rpc:config.rpc,genesisHash:await c.getGenesisHash(),programId:config.programId,programSha256:createHash('sha256').update(readFileSync('program/target/deploy/crewfund.so')).digest('hex'),escrow:config.escrow,signature,slot:tx.slot,blockTime:tx.blockTime,transactionError:tx.meta.err,hotel:config.hotel,hotelBalanceBefore:tx.meta.preBalances[hotel],hotelBalanceAfter:tx.meta.postBalances[hotel],feeLamports:tx.meta.fee,escrowDebitLamports:30_000_000,paid:state.paid,deposits:state.deposits,refunds:state.refunds};
+writeFileSync('demo-payment-evidence.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
