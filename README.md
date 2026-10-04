@@ -113,7 +113,7 @@ Devnet faucet limits may also block funding the other wallets. In that case tran
 
 ## Public GitHub preparation
 
-Only publish source, manifests/lockfiles, README, public config, and evidence. `.gitignore` excludes `.secrets/`, `.env.local`, node_modules, build outputs, ledgers, and keypairs. Do not attach a folder archive containing `.secrets`. No credentials are embedded in frontend source. No remote repository has been created and nothing has been pushed.
+Only publish source, manifests/lockfiles, README, public config, and evidence. `.gitignore` excludes `.secrets/`, `.env.local`, node_modules, build outputs, ledgers, and keypairs. Do not attach a folder archive containing `.secrets`. No credentials are embedded in frontend source. Public repository: [kapi8-bit/crewfund](https://github.com/kapi8-bit/crewfund).
 
 Before committing:
 
@@ -148,6 +148,6 @@ git commit -m "Build CrewFund test-SOL escrow prototype"
 
 ## WHU submission package
 
-The listing [Build an MVP with Solana at WHU](https://superteam.fun/earn/listing/build-at-whu) requires a working Solana prototype, a pitch-deck link in the **Bounty submission link** field and a public GitHub repository. It also requires WHU Hackathon 2026 participation and following SuperteamDE on X. The user confirmed WHU participation, supplied a **4 October 2026 23:59 Europe/Berlin** deadline, and now has the GitHub account `kapi8-bit`. Superteam login and publication are pending. No submission has been sent.
+The listing [Build an MVP with Solana at WHU](https://superteam.fun/earn/listing/build-at-whu) requires a working Solana prototype, a pitch-deck link in the **Bounty submission link** field and a public GitHub repository. It also requires WHU Hackathon 2026 participation and following SuperteamDE on X. The user confirmed WHU participation, supplied a **4 October 2026 23:59 Europe/Berlin** deadline, and now has the GitHub account `kapi8-bit`. The public repository is [kapi8-bit/crewfund](https://github.com/kapi8-bit/crewfund). Superteam login remains pending. No submission has been sent.
 
-The seven-slide deck is provided in `pitch/CrewFund-WHU-pitch.pptx` (editable) and `pitch/CrewFund-WHU-pitch.pdf` (fixed visual rendering). It covers the group-payment problem, enforced Solana rules, verified prototype, a proposed pilot with campus clubs and actual scope. `PITCH-AND-SUBMISSION.md` contains the short spoken pitch and submission description. Local file paths are not public submission links; publish the deck before filling the link field.
+The seven-slide deck is provided in `pitch/CrewFund-WHU-pitch.pptx` (editable) and `pitch/CrewFund-WHU-pitch.pdf` (fixed visual rendering). It covers the group-payment problem, enforced Solana rules, verified prototype, a proposed pilot with campus clubs and actual scope. `PITCH-AND-SUBMISSION.md` contains the short spoken pitch and submission description. Public deck link for the Bounty submission link field: [CrewFund pitch PDF](https://github.com/kapi8-bit/crewfund/blob/main/pitch/CrewFund-WHU-pitch.pdf).

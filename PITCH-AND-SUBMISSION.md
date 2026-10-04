@@ -48,7 +48,7 @@ A fictional test hotel, 0.03 Test SOL total, no real booking and no real-money p
 - Deadline supplied by the participant: **4 October 2026, 23:59 Europe/Berlin**. Treat this as the hard deadline.
 - Participation at WHU Hackathon 2026: confirmed by the user.
 - Put a **public pitch-deck link** in the **Bounty submission link** field.
-- Provide a **public GitHub repository**. The user now has the GitHub account **kapi8-bit**. Repository publication remains pending.
+- Provide a **public GitHub repository**. The user now has the GitHub account **kapi8-bit**. Public repository: https://github.com/kapi8-bit/crewfund.
 - Follow **https://x.com/SuperteamDE**. This is a listed prerequisite, not yet confirmed by the user.
 - Superteam requires Google/email login before its submission form opens. The user must handle authentication and any agreement to its terms.
 - Add team details and the two public URLs after publishing the sanitized source and deck.
@@ -56,3 +56,11 @@ A fictional test hotel, 0.03 Test SOL total, no real booking and no real-money p
 - If Devnet becomes available, replace the network status only after verifying deployment, no upgrade authority and real Devnet signatures.
 - The seven-slide **CrewFund-WHU-pitch.pptx** and matching **CrewFund-WHU-pitch.pdf** are in the parent outputs directory and copied under `pitch/` in the publication package. They include a proposed first-user pilot through student clubs, as requested by the listing. No recruitment or partnerships are claimed.
 - This submission text is a draft. No submission has been sent, no repository has been published, and the local PDF path is not a public deck link.
+
+## Public links
+
+Repository: https://github.com/kapi8-bit/crewfund
+
+Bounty submission link (pitch deck): https://github.com/kapi8-bit/crewfund/blob/main/pitch/CrewFund-WHU-pitch.pdf
+
+No submission has been sent yet.
