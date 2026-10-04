@@ -1,0 +1,16 @@
+LOCAL VALIDATOR payout signature: 35j2NqG1bw5B4nQq3t9jtTjCzMfRJaZZ5VGpHqBz6Udkoi1ocodufC6gE4jd7EhfjRUV1qX4P6bkUuMR3cbSU3TR
+✔ fully funded escrow: only fixed hotel receives exactly 0.03 SOL; refund and repeat payout blocked (4699.528541ms)
+LOCAL VALIDATOR refund signature: 5PPQDETdhcb8XNwTRbbzT26yayAghcWowQETewSusiWxSCFYau55fGMwRLr8TH1FxVPYzgFXMuztTcz93UuzaqnQ
+LOCAL VALIDATOR refund signature: 3kdqWPMx9LAK5NczokivroPef9PsNTQTr7Gc5iSCgV1pUf32Fzos41QjMPQtSPStWaiNeo7hRYtfroxMrhpQWWhG
+✔ failed funding: deadline enforced, each depositor refunds own share once, payout excluded (15003.672833ms)
+✔ duplicate/unauthorized deposits rejected; terms cannot be reinitialized (3401.241ms)
+✔ fully funded but unconfirmed booking: all three can refund after deadline; no provider payout (15459.142167ms)
+✔ hotel cannot substitute an arbitrary recipient account for escrow (4352.538916ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 43593.032708

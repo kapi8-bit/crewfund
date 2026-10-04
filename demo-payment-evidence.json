@@ -1,0 +1,20 @@
+{
+  "network": "Localnet",
+  "rpc": "http://127.0.0.1:8899",
+  "genesisHash": "Ckdq8gBhwoeVvx4KB4Gh1xQr6x3PKayyyRAgVEv8Zzqz",
+  "programId": "CsP2XV9HKm95uETQ2zY7TnETF4oxQ8GLnGYBme7isKgq",
+  "programSha256": "c48476c63efe428b1c2d54d34dfdb4541f6091b4786808c34183c95bb540eab3",
+  "escrow": "B4pKckXatVdazoDV2RLJUkZj8Evwp5svJqcgZEVQYkes",
+  "signature": "RSnFCH4HiHd6wBLr8dqTswdy3t7ahK1Me8x66Q1CYVRuTuMhZGU6jMKEJk9Q8rx3PHBw9bEt1dTNRXBzimASK8w",
+  "slot": 4455,
+  "blockTime": 1791142637,
+  "transactionError": null,
+  "hotel": "ADRRf36d1ffRZKP1x34ZY7zKWJfNUHcqWX6KLizmsnV6",
+  "hotelBalanceBefore": 129995000,
+  "hotelBalanceAfter": 159990000,
+  "feeLamports": 5000,
+  "escrowDebitLamports": 30000000,
+  "paid": true,
+  "deposits": 7,
+  "refunds": 0
+}

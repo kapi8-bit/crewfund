@@ -1,0 +1,12 @@
+{
+  "programId": "CsP2XV9HKm95uETQ2zY7TnETF4oxQ8GLnGYBme7isKgq",
+  "rpc": "http://127.0.0.1:8899",
+  "members": [
+    "6zeRiynm2SUqneF66UXrjzain7ntM6khBm4puW6mVyaa",
+    "HN6fXFtnAAoGSvKiA3yj2QuT7Br42UQ7zY292N4zurU",
+    "HvEATSsWGukFxENBBn6rC4zuHc5t263jYdqXKqyeAewd"
+  ],
+  "hotel": "ADRRf36d1ffRZKP1x34ZY7zKWJfNUHcqWX6KLizmsnV6",
+  "escrow": "B4pKckXatVdazoDV2RLJUkZj8Evwp5svJqcgZEVQYkes",
+  "creationSignature": "5xbEAN6UjB7aBzA8svF2PbdyRE57EiJ5mXqF4x3PC7Dn8dGzAWeoJvyLKK9CrBWGL9k5h1QsLvny8jETaCWxxoU3"
+}
